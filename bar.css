@@ -4,22 +4,29 @@
 {
 	margin:0px;
 	padding:0px;
-	height:auto;
 }
 body{
 	background:#FFF;
-	height:100%;
+
 
 	
 }
+.WebContainer{
+    width: 100%;
+    height: auto;
+}
+.articles{
+    width:90%; /*Takes 90% width from WebContainer*/
+    height: auto;
+    margin: auto;
+} 
 /* Social icons*/
 .icons{
-	
-	position:absolute;
-	top:0%;
-	right:-29%;
-	width:500px;
-	text-decoration:none;
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	width: 126px;
+	text-decoration: none;
 }
 .icons a i{
 	margin-left:20px;
@@ -164,13 +171,13 @@ h3.section-title{
 	padding:10px;
 }
 #footer{
-	position:absolute;
-	bottom:0;
-	width:100%;
-	height:30px;
-	background:#0C0;
+	position: absolute;
+	bottom: -160px;
+	width: 100%;
+	height: 28px;
+	background: #0C0;
+	left: 3px;
 }
-
 .social-icons{
 	text-align:right;
 }
@@ -188,6 +195,3 @@ h3.section-title{
 	height:40px;
 	margin-right:20px
 }
-
-
-

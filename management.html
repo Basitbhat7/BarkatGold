@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Management</title>
+<!--CSS -->
+<link href="foundation.css" rel="stylesheet" type="text/css" />
+<link href="fonts.css.css?family=Roboto|Varela+Round|Raleway" rel="stylesheet" type="text/css">
+<link href="icon.css?family=Material+Icons" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!--Js -->
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+  <style type="text/css">
+	body{
+		background: #eeeeee;
+		font-family: 'Varela Round', sans-serif;
+	}
+    .form-inline {
+        display: inline-block;
+    }
+	.navbar-header.col {
+		padding: 0 !important;
+	}	
+	.navbar {		
+		background: #fff;
+		padding-left: 16px;
+		padding-right: 16px;
+		border-bottom: 1px solid #d6d6d6;
+		box-shadow: 0 0 4px rgba(0,0,0,.1);
+	}
+	.nav-link img {
+		border-radius: 50%;
+		width: 36px;
+		height: 36px;
+		margin: -8px 0;
+		float: left;
+		margin-right: 10px;
+	}
+	.navbar .navbar-brand {
+		color: #555;
+		padding-left: 0;
+		font-size: 20px;
+		padding-right: 50px;
+		font-family: 'Raleway', sans-serif;
+	}
+	.navbar .navbar-brand b {
+		font-weight: bold;
+		color: #eb5844;
+	}
+	.navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
+		color: #f08373 !important;
+	}
+	.navbar ul.nav li.active a, .navbar ul.nav li.active a:hover, .navbar ul.nav li.active a:focus {
+		color: #eb5844 !important;
+		background: transparent !important;
+	}
+	.search-box {
+        position: relative;
+    }	
+    .search-box input.form-control {		
+        padding-right: 35px;
+        border-radius: 0;
+		padding-left: 0;
+		border-width: 0 0 1px 0;
+		box-shadow: none;
+    }
+	.search-box input.form-control:focus {		
+		border-color: #f08373;		
+	}
+	.search-box .input-group-addon {
+        min-width: 35px;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 0;
+        z-index: 9;
+        padding: 7px 0 7px 7px;
+		height: 100%;
+    }
+    .search-box i {
+        color: #a0a5b1;
+		font-size: 19px;
+    }
+	.navbar .nav-item i {
+		font-size: 18px;
+	}
+	.navbar .dropdown-item i {
+		font-size: 16px;
+		min-width: 22px;
+	}
+	.navbar .nav-item.open > a {
+		background: none !important;
+	}
+	.navbar .dropdown-menu {
+		border-radius: 1px;
+		border-color: #e5e5e5;
+		box-shadow: 0 2px 8px rgba(0,0,0,.05);
+	}
+	.navbar .dropdown-menu li a {
+		color: #777;
+		padding: 8px 20px;
+		line-height: normal;
+	}
+	.navbar .navbar-form {
+		margin-right: 0;
+		margin-left: 0;
+		border: 0;
+	}
+	.fixed-footer{
+        width: 100%;
+		bottom:-120px;
+        position:absolute;       
+        background:#900;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+		height:80px;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+	@media (min-width: 992px){
+		.form-inline .input-group {
+			width: 250px;
+			margin-right: 30px;
+		}
+	}
+	@media (max-width: 991px){
+		.form-inline {
+			display: block;
+			margin-bottom: 10px;
+			margin-top: 0;
+		}
+		.input-group {
+			width: 100%;
+		}
+	}
+	.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:30px;
+   background-color:#666;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+	<div class="navbar-header d-flex col">
+		<a class="navbar-brand" href="#">Barkat<b>Gold</b></a>  		
+		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+			<span class="navbar-toggler-icon"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<ul class="nav navbar-nav">
+			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>			
+			<li class="nav-item dropdown">
+				<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">About Us<b class="caret"></b></a>
+			  <ul class="dropdown-menu">					
+					<li><a href="Companyp.htm" class="dropdown-item">Company Profile</a></li>
+					<li><a href="profile.html" class="dropdown-item">Chairman's Message</a></li>
+					<li><a href="Divsions.html" class="dropdown-item">Divisions</a></li>
+                    <li><a href="#" class="dropdown-item">Certifications</a></li>
+					<li><a href="management.html" class="dropdown-item">Management</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+			<li class="nav-item active"><a href="#" class="nav-link">Brands</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="Careers.html" class="nav-link">Careers</a></li>
+            <li class="nav-item"><a href="contact us.htm" class="nav-link">Contact Us</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right ml-auto">
+			<li class="navbar-form-wrapper">
+			<li class="nav-item"><a href="tel:+919797235844" class="nav-link"><i class="fa fa-phone"></i></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-instagram"></i></a></li>
+			<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a></li>
+			
+		</ul>
+		
+	</div>
+</nav>
+</div>
+<div id="main-content" class="site-main hfeed light">
+
+
+<!-- woocommerce message -->
+
+
+<div  class="page-wrapper">
+<div class="row">
+<div id="content" class="large-12 columns" role="main">
+
+		
+			
+				<p><a href="http://ahliafood.com/web/wp-content/uploads/2016/01/Organisational-Structure.jpg"><span style="color: #000000;"><strong>Organizational structure &amp; Departments :</strong></span></a><strong><a href="http://ahliafood.com/web/wp-content/uploads/2015/10/Organisational-Structure.jpg"><br />
+</a></strong><a href="images/Organisational-Structure-1.jpg"><img class="aligncenter size-full wp-image-4479" src="images/Organisational-Structure-1.jpg" alt="" width="710" height="354" sizes="(max-width: 710px) 100vw, 710px" /></a></p>
+			
+			
+</div><!-- #content -->
+</div><!-- .row  -->
+</div><!-- .page-wrapper -->
+
+
+
+</div><!-- #main-content -->
+<div class="footer"><p>Copyright &copy; 2019 - 2020<strong> BarkatGold</strong> All Rights Reserved</p></div>			
+</body>
+</html>

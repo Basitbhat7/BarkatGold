@@ -192,7 +192,36 @@
 <p style="text-align: justify;">We are <strong></strong> and<strong> </strong> certified company with stringent standards for high quality products, state of the art processing methods, professional management, ethical business practices. We keep our customer&#39s needs foremost and this has propelled us from a modest beginnings, with a planned vision, to our current standing as one of Kashmir&#39s prime foodstuff supplier, and with prospects for a more enhanced future growth.</p>
 <p style="text-align: justify;">Our Corporate identity has been built on the strength of our robust business understanding of our customers needs and we are happy to be recognized for leaving a positive imprint on all our business relationships and also in reinforcing bonds and trust with our valued customers which transcends business.</p></div>
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.3'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="102913357716003"
+  theme_color="#000000"
+  logged_in_greeting="Assalam u alaikum! How can we help you?"
+  logged_out_greeting="Assalam u alaikum! How can we help you?">
+</div>
+
 <div class="fixed-footer"> <p>Copyright &copy; 2019 - 2020<strong> BarkatGold</strong> All Rights Reserved</p></div>
+
+
                    
                     
   

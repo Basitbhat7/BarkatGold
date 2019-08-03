@@ -424,7 +424,10 @@ img {
   float: left !important; }
 
 .right {
-  float: right !important; }
+	float: right !important;
+	height: auto;
+	top: 20px;
+}
 
 .text-left {
   text-align: left !important; }
@@ -845,8 +848,9 @@ table {
 
 /* -- background / sections -- */
 .ux-section {
-  padding: 30px;
-  position: relative; }
+	padding: 40px;
+	position: relative;
+}
 
 .ux-section .blog_shortcode_text {
   margin-top: -20px; }
@@ -4166,7 +4170,8 @@ small.woocommerce-invalid {
   font-size: 90%; }
 
 .absolute-footer .right {
-  font-size: 90%; }
+  font-size: 90%;
+  float:left; }
 .footer{
   background-size: cover;
   background-repeat: no-repeat; }

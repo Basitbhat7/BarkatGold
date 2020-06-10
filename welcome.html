@@ -10,8 +10,7 @@
 <!--CSS -->
 <link href="fonts.css.css?family=Roboto|Varela+Round|Raleway" rel="stylesheet" type="text/css">
 <link href="icon.css?family=Material+Icons" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 <!--Js -->
 <script src="jquery.js"></script>
 <script src="bootstrap.js"></script>
@@ -111,14 +110,6 @@
 		margin-left: 0;
 		border: 0;
 	}
-	.fixed-footer{
-        width: 100%;
-		bottom:-120px;
-        position:absolute;       
-        background:#333;
-        padding: 10px 0;
-        color: #fff;
-    }
     .container{
         width: 80%;
         margin: 0 auto; /* Center the DIV horizontally */
@@ -139,13 +130,10 @@
 			width: 100%;
 		}
 	}
-	.footer {
-   position: fixed;
-   left: 0;
+   footer {
+   position:relative;
    bottom: 0;
-   width: 100%;
-   height:30px;
-   background-color:#666;
+   background-color:#369;
    color: white;
    text-align: center;
 }
@@ -195,7 +183,7 @@
 	</div>
 </nav>
 </div>
-               <div  class="page-wrapper">
+               <div  class="container-fluid">
 <div id="content" class="large-12 columns" role="main">
 	
 											<font color="#990033"><strong>BarkatGold.</strong></font>was established in 2004 with modest beginnings and over the years emerged as the prime importer,retailer,processor and distributer of authentic,premium high quality spices,pulses and other food stuff in Kashmir.We are<strong> FSSAI No.21018053000684</strong> certified company with the strength standards for high quality products state of the art processing method,professional management,elinical business practices.We keep our customer's needs foremost and this has propelled us from a modest beginnings,with a planned vision to our standard as one of the Kashmir's Prime Food Stuff Supplier and with prospect for more enhanced future growth.
@@ -216,10 +204,15 @@ Our handling, picking and packing team makes on time.</p>
                                             
 										</div>
                    
-        
-						
-    <div class="fixed-footer">Copyright &copy; 2019 - 2020<strong> BarkatGold</strong> All Rights Reserved</div>
+ <!-- FOOTER-->
 
+<footer>
+ <div class="row text-left">
+  <div class="col-md-12">
+  <p>Copyright &copy 2020-21<strong> <span>Barkat</span> Gold</strong></p>
+  </div>
+</div>
+</footer>
 </body>
 </html>
 

@@ -10,8 +10,7 @@
 <!--CSS -->
 <link href="fonts.css.css?family=Roboto|Varela+Round|Raleway" rel="stylesheet" type="text/css">
 <link href="icon.css?family=Material+Icons" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 <!--Js -->
 <script src="jquery.js"></script>
 <script src="bootstrap.js"></script>
@@ -126,10 +125,19 @@
     .fixed-footer{
         bottom: 0;
     }
-    .container{
-        width: 80%;
+	.container-fluid{
+		padding-bottom:25px;
+	}
+    .container-fluid ul{
+		list-style:none;
         margin: 0 auto; /* Center the DIV horizontally */
     }
+	.container-fluid ul li:hover{
+		color:#066;
+	font-weight:bold;
+	margin-left:15px;
+	transition:all 1.3s;
+	}
 	@media (min-width: 992px){
 		.form-inline .input-group {
 			width: 250px;
@@ -146,16 +154,15 @@
 			width: 100%;
 		}
 	}
-	.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height:30px;
-   background-color:#666;
-   color: white;
-   text-align: center;
-}
+	footer
+   {
+	background-color:#369;
+	background-repeat:no-repeat;
+	color:#FFF;
+	padding-top:10px;
+	position:relative;
+	line-height:18px;
+   }
 </style>
 </head>
 <body>
@@ -184,8 +191,7 @@
 				</ul>
 			</li>
 			<li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-			<li class="nav-item active"><a href="#" class="nav-link">Brands</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+			<li class="nav-item active"><a href="#" class="nav-link">Events</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="Careers.html" class="nav-link">Careers</a></li>
             <li class="nav-item"><a href="contact us.htm" class="nav-link">Contact Us</a></li>
@@ -203,33 +209,35 @@
 	</div>
 </nav>
 </div>
-<div class="item">
+<div class="container-fluid">
 <font color="#000099" face="Lucida Sans Unicode, Lucida Grande, sans-serif" size="+5" style="text-align:left"><strong>Products</strong></font>
 	<p style="text-align: justify;"><strong>Spices, Pulses, Herbs (Processing / Milling / packaging)</strong><br />
 Leveraging on our decade long experience we ensure to procure premium quality products from our standards approved suppliers worldwide. Our competitive procuring methods and coupled with quality foremost in mind, ensures that our customers receive premium quality authentic products, milled, processed and repacked at most competitive prices.<br />
-<strong>Our “Barkat” brand products in various retail &amp; whole sale packaging, consists of :</strong></p>
+<strong>Our <span style="color:#F00">“Barkat”</span> brand products in various retail &amp; whole sale packaging, consists of :</strong></p>
 <br />
 
 <font size="+1">
 <ul>
-<li>Dry Nuts</li>
-<li>Jar Spice Powder</li>
+<li>Dry Fruits</li>
+<li>Box Spice Powder</li>
 <li>Pulses</li>
 <li>Spices Whole</li>
 <li>Spice Powder</li>
 <li>Sugar</li>
-<li>Coconut Powder</li>
 </ul>
 </font>
 </div>
- <!-- FOOTER 2 -->
+ <!-- FOOTER  -->
 
 
-<div class="absolute-footer dark" style="background-color:#333">
-		<div class="left">
-			 		<div class="copyright-footer">Copyright 2019-20 © <strong>BarkatGold</strong>. All Rights Reserved</div>
-		</div><!-- .left -->
-</div><!-- .absolute-footer -->
-</footer><!-- .footer-wrapper -->
+<!-- FOOTER-->
+
+<footer>
+ <div class="row text-center">
+  <div class="col-md-12">
+  <p>Copyright &copy 2020-21 Barkat Gold</p>
+  </div>
+  </div>
+</footer>
 </body>
 </html>

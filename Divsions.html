@@ -10,8 +10,7 @@
 <!--CSS -->
 <link href="fonts.css.css?family=Roboto|Varela+Round|Raleway" rel="stylesheet" type="text/css">
 <link href="icon.css?family=Material+Icons" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 <!--Js -->
 <script src="jquery.js"></script>
 <script src="bootstrap.js"></script>
@@ -111,18 +110,19 @@
 		margin-left: 0;
 		border: 0;
 	}
-	.fixed-footer{
-        width: 100%;
-		bottom:-220px;
-        position:absolute;       
-        background:#333;
-        padding: 10px 0;
-        color: #fff;
-    }
+	footer
+   {
+	background-color:#369;
+	background-repeat:no-repeat;
+	color:#FFF;
+	padding:6px;
+	position:relative;
+	line-height:18px;
+   } 
 
 
-    .container{
-        width: 80%;
+    .container-fluid{
+        height:400px;
         margin: 0 auto; /* Center the DIV horizontally */
     }
 	@media (min-width: 992px){
@@ -140,11 +140,20 @@
 		.input-group {
 			width: 100%;
 		}
+		
+	}
+	@media (max-width: 900px)
+	{
+		footer{
+			position:absolute;
+			width:100%;
+			bottom:-810px;
+	}
 	}
 </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+<nav class="navbar navbar-default navbar-expand-sm navbar-light">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Barkat<b>Gold</b></a>  		
 		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
@@ -169,9 +178,7 @@
 			  </ul>
 			</li>
 			<li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-			<li class="nav-item active"><a href="#" class="nav-link">Brands</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Events</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+            <li class="nav-item active"><a href="#" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="Careers.html" class="nav-link">Careers</a></li>
             <li class="nav-item"><a href="contact us.htm" class="nav-link">Contact Us</a></li>
 		</ul>
@@ -187,19 +194,33 @@
 	</div>
 </nav>
 </div>
-<div class="item">
-<p>Our sales and Marketing strategies are mentioned below, were our products are distributed as per customer's requirements.</p>
-
-<br />
-<ul>
-<li type="1">Wholesale Distributors</li>
-<li type="1">Catering Services</li>
-<li type="1">Hotels</li>
-<li type="1">Shops</li>
-</ul>
+<div class="container-fluid">
+<p align="center" style="color:#368; font-family:'Times New Roman', Times, serif; font-size:18px">Our sales and Marketing strategies are mentioned below, were our products are distributed as per customer's requirements.</p>
+<div class="row text-center">
+<div class="col-md-3">
+<img src="images/cardemom-28ilaichi-29-500x500.jpg" class="rounded mx-auto d-block" width="200px" height="200" alt="">
+Merriages</div>
+<div class="col-md-3">
+<img src="images/cardemom-28ilaichi-29-500x500.jpg" class="rounded mx-auto d-block" width="200px"  height="200" alt="">
+Hotels</div>
+<div class="col-md-3">
+<img src="images/cardemom-28ilaichi-29-500x500.jpg" class="rounded mx-auto d-block" width="200px"  height="200" alt="">
+Shops</div>
+<div class="col-md-3">
+<img src="images/cardemom-28ilaichi-29-500x500.jpg" class="rounded mx-auto d-block" width="200px"  height="200" alt="">
+Parties</div>
+</div>
 </div>
 
-<div class="fixed-footer"><p>Copyright &copy; 2019 - 2020<strong> Barkatfoods</strong> All Rights Reserved</p></div>
+<!-- FOOTER-->
+
+<footer>
+ <div class="row text-center">
+  <div class="col-md-12">
+  <p>Copyright &copy 2020-21 Barkat Gold</p>
+  </div>
+</div>
+</footer>
        
 </body>
 </html>

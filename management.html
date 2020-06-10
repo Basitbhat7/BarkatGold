@@ -10,9 +10,7 @@
 <link href="foundation.css" rel="stylesheet" type="text/css" />
 <link href="fonts.css.css?family=Roboto|Varela+Round|Raleway" rel="stylesheet" type="text/css">
 <link href="icon.css?family=Material+Icons" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="bootstrap.min.css">
 <!--Js -->
 <script src="jquery.js"></script>
 <script src="bootstrap.js"></script>
@@ -86,16 +84,18 @@
 		margin-left: 0;
 		border: 0;
 	}
-	.fixed-footer{
-        width: 100%;
-        bottom:-250px;
-        position:absolute;       
-        background:#333;
-        padding: 10px 0;
-        color: #fff;
-    }
-    .container{
-        width: 80%;
+	footer
+   {
+	background-color:#369;
+	background-repeat:no-repeat;
+	color:#FFF;
+	position:relative;
+	padding:6px;
+	line-height:18px;
+   }
+    .container-fluid{
+        width: 95%;
+		padding:15px;
         margin: 0 auto; /* Center the DIV horizontally */
     }
 	@media (min-width: 992px){
@@ -114,10 +114,20 @@
 			width: 100%;
 		}
 	}
+	@media (max-width: 900px){
+		footer{
+			font-size:12px;
+			text-align:center;
+			padding-top:20px;
+		}
+		.container-fluid{
+			height:300px;
+		}
+	}
 </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+<nav class="navbar navbar-default navbar-expand-md navbar-light">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Barkat<b>Gold</b></a>  		
 		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
@@ -142,8 +152,7 @@
 			  </ul>
 			</li>
 			<li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-			<li class="nav-item active"><a href="#" class="nav-link">Brands</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+			<li class="nav-item active"><a href="#" class="nav-link">Events</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="Careers.html" class="nav-link">Careers</a></li>
             <li class="nav-item"><a href="contact us.htm" class="nav-link">Contact Us</a></li>
@@ -160,27 +169,18 @@
 	</div>
 </nav>
 </div>
-<div id="main-content" class="site-main hfeed light">
+<div class="container-fluid">
+<h3>Organisational and Management Structure:</h3>
+<img src="images/Structure.png" class="img-fluid" alt="" height="500">
+</div>
+<!-- FOOTER-->
 
-
-<!-- woocommerce message -->
-
-
-<div  class="page-wrapper">
-<div id="content" class="large-12" role="main">
-
-		
-			
-				<p><a href="http://ahliafood.com/web/wp-content/uploads/2016/01/Organisational-Structure.jpg"><span style="color: #000000;"><strong>Organizational structure &amp; Departments :</strong></span></a><strong><a href="http://ahliafood.com/web/wp-content/uploads/2015/10/Organisational-Structure.jpg"><br />
-</a></strong><a href="images/Organisational-Structure-1.jpg"><img class="aligncenter size-full wp-image-4479" src="images/Organisational-Structure-1.jpg" alt="" width="710" height="354" sizes="(max-width: 710px) 100vw, 710px" /></a></p>
-			
-			
-</div><!-- #content -->
-</div><!-- .page-wrapper -->
-
-
-
-</div><!-- #main-content -->
-<div class="fixed-footer"><p>Copyright &copy; 2019 - 2020<strong> BarkatGold</strong> All Rights Reserved</p></div>			
+<footer>
+ <div class="row text-center">
+  <div class="col-md-12">
+  <p>Copyright &copy 2020-21<strong> <span>Barkat</span> Gold</strong></p>
+  </div>
+</div>
+</footer>			
 </body>
 </html>

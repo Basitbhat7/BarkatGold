@@ -10,8 +10,7 @@
 <!--CSS -->
 <link href="fonts.css.css?family=Roboto|Varela+Round|Raleway" rel="stylesheet" type="text/css">
 <link href="icon.css?family=Material+Icons" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
 <!--Js -->
 <script src="jquery.js"></script>
 <script src="bootstrap.js"></script>
@@ -111,20 +110,21 @@
 		margin-left: 0;
 		border: 0;
 	}
-	.fixed-footer{
-        width: 100%;
-		height:45px;
-		bottom:-110px;
-        position:absolute;       
-        background:#333;
-        padding: 10px 10px;
-        color: #fff;
-    }
-    }
-    .container{
-        width: 80%;
-        margin: 0 auto; /* Center the DIV horizontally */
-    }
+	footer
+{
+	background-color:#369;
+	background-repeat:no-repeat;
+	color:#FFF;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	line-height:18px;
+}
+
+ .container-fluid{
+	padding-bottom:4rem;
+    margin: 0 auto; /* Center the DIV horizontally */
+  }
 	@media (min-width: 992px){
 		.form-inline .input-group {
 			width: 250px;
@@ -144,7 +144,7 @@
 </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+<nav class="navbar navbar-default navbar-expand-sm navbar-light">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Barkat<b>Gold</b></a>  		
 		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
@@ -169,8 +169,7 @@
 				</ul>
 			</li>
 			<li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-			<li class="nav-item active"><a href="#" class="nav-link">Brands</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+			<li class="nav-item active"><a href="#" class="nav-link">Events</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="Careers.html" class="nav-link">Careers</a></li>
             <li class="nav-item"><a href="contact us.htm" class="nav-link">Contact Us</a></li>
@@ -187,10 +186,11 @@
 </nav>
 </div>
 
-     <div class="item" role="main">
-	<p style="text-align: justify;"><strong>Barkat Gold</strong><strong> for Foodstuff and Consumer Products</strong>. was established in 2004 with modest beginnings and over the years emerged as the prime importer, retailer, processor and distributor of authentic, premium high quality Spices, pulses, herbs and other foodstuff in Kashmir.</p>
+     <div class="container-fluid">
+	<p style="text-align: justify;"><strong><span style="color:#F00">Barkat</span> Gold</strong><strong> for Foodstuff and Consumer Products</strong>. was established in 2004 with modest beginnings and over the years emerged as the prime importer, retailer, processor and distributor of authentic, premium high quality Spices, pulses, herbs and other foodstuff in Kashmir.</p>
 <p style="text-align: justify;">We are <strong></strong> and<strong> </strong> certified company with stringent standards for high quality products, state of the art processing methods, professional management, ethical business practices. We keep our customer&#39s needs foremost and this has propelled us from a modest beginnings, with a planned vision, to our current standing as one of Kashmir&#39s prime foodstuff supplier, and with prospects for a more enhanced future growth.</p>
-<p style="text-align: justify;">Our Corporate identity has been built on the strength of our robust business understanding of our customers needs and we are happy to be recognized for leaving a positive imprint on all our business relationships and also in reinforcing bonds and trust with our valued customers which transcends business.</p></div>
+<p style="text-align: justify;">Our Corporate identity has been built on the strength of our robust business understanding of our customers needs and we are happy to be recognized for leaving a positive imprint on all our business relationships and also in reinforcing bonds and trust with our valued customers which transcends business.</p>
+</div>
 
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -219,11 +219,21 @@
   logged_out_greeting="Assalam u alaikum! How can we help you?">
 </div>
 
-<div class="fixed-footer"> <p>Copyright &copy; 2019 - 2020<strong> BarkatGold</strong> All Rights Reserved</p></div>
+<!-- FOOTER-->
 
-
-                   
-                    
+<footer>
+ <div class="row text-center">
+  <div class="col-md-4">
+  <p>Copyright &copy 2020-21 Barkat Gold</p>
+  </div>
+  <div class="col-md-4">
+   <p>All rights Reserved </p>
+  </div>
+    <div class="col-md-4">
+       <p>Design by : Basit Majeed</p> 
+  </div>
+</div>
+</footer>
   
  </body>
  </html>

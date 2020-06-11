@@ -25,14 +25,16 @@
 	.navbar-header.col {
 		padding: 0 !important;
 	}	
-	.navbar {		
-		background: #fff;
+	.navbar 
+	   {		
+		background:#FC3;
 		padding-left: 16px;
 		padding-right: 16px;
 		border-bottom: 1px solid #d6d6d6;
 		box-shadow: 0 0 4px rgba(0,0,0,.1);
-	}
-	.nav-link img {
+	   }
+	.navbar-brand img 
+	{
 		border-radius: 50%;
 		width: 36px;
 		height: 36px;
@@ -41,7 +43,7 @@
 		margin-right: 10px;
 	}
 	.navbar .navbar-brand {
-		color: #555;
+		color:#000;
 		padding-left: 0;
 		font-size: 20px;
 		padding-right: 50px;
@@ -58,33 +60,6 @@
 		color: #eb5844 !important;
 		background: transparent !important;
 	}
-	.search-box {
-        position: relative;
-    }	
-    .search-box input.form-control {		
-        padding-right: 35px;
-        border-radius: 0;
-		padding-left: 0;
-		border-width: 0 0 1px 0;
-		box-shadow: none;
-    }
-	.search-box input.form-control:focus {		
-		border-color: #f08373;		
-	}
-	.search-box .input-group-addon {
-        min-width: 35px;
-        border: none;
-        background: transparent;
-        position: absolute;
-        right: 0;
-        z-index: 9;
-        padding: 7px 0 7px 7px;
-		height: 100%;
-    }
-    .search-box i {
-        color: #a0a5b1;
-		font-size: 19px;
-    }
 	.navbar .nav-item i {
 		font-size: 18px;
 	}
@@ -110,19 +85,25 @@
 		margin-left: 0;
 		border: 0;
 	}
+	.nav-link{
+		color:#FFF;
+	}
 	footer
-{
-	background-color:#369;
+   {
+	background-color:#FC3;
 	background-repeat:no-repeat;
-	color:#FFF;
+	color:#336;
+	padding-top:1%;
 	position:relative;
 	bottom:0;
 	width:100%;
 	line-height:18px;
-}
+	text-align:left
+   }
 
- .container-fluid{
-	padding-bottom:4rem;
+ .container{
+	padding:4rem;
+	width:auto;
 	height:480px;
     margin: 0 auto; /* Center the DIV horizontally */
   }
@@ -141,12 +122,25 @@
 		.input-group {
 			width: 100%;
 		}
+		.container
+		{
+	       padding-bottom:4rem;
+	       height:auto;
+		   width:100vw;
+           margin: 0 auto; /* Center the DIV horizontally */
+        }
+		footer{
+			padding-top:3%;
+			text-align:center;
+			bottom:0;
+		}
+	
 	
 	}
 </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-expand-sm navbar-light">
+<nav class="navbar navbar-default navbar-expand-md navbar-light">
 	<div class="navbar-header d-flex col">
 		<a class="navbar-brand" href="#">Barkat<b>Gold</b></a>  		
 		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
@@ -188,23 +182,17 @@
 </nav>
 </div>
 
-     <div class="container-fluid">
-	<p style="text-align: justify;"><strong><span style="color:#F00">Barkat</span> Gold</strong><strong> for Foodstuff and Consumer Products</strong>. was established in 2004 with modest beginnings and over the years emerged as the prime importer, retailer, processor and distributor of authentic, premium high quality Spices, pulses, herbs and other foodstuff in Kashmir.</p>
+     <div class="container">
+	<p style="text-align: justify;"><strong><span style="color:#F00">Barkat</span><font color="#333366"> Gold</font></strong><strong> for Foodstuff and Consumer Products</strong>. was established in 2004 with modest beginnings and over the years emerged as the prime importer, retailer, processor and distributor of authentic, premium high quality Spices, pulses, herbs and other foodstuff in Kashmir.</p>
 <p style="text-align: justify;">We are <strong></strong> and<strong> </strong> certified company with stringent standards for high quality products, state of the art processing methods, professional management, ethical business practices. We keep our customer&#39s needs foremost and this has propelled us from a modest beginnings, with a planned vision, to our current standing as one of Kashmir&#39s prime foodstuff supplier, and with prospects for a more enhanced future growth.</p>
 <p style="text-align: justify;">Our Corporate identity has been built on the strength of our robust business understanding of our customers needs and we are happy to be recognized for leaving a positive imprint on all our business relationships and also in reinforcing bonds and trust with our valued customers which transcends business.</p>
 </div>
 <!-- FOOTER-->
 
 <footer>
- <div class="row text-center">
-  <div class="col-md-4">
+ <div class="row">
+  <div class="col-md-12">
   <p>Copyright &copy 2020-21 Barkat Gold</p>
-  </div>
-  <div class="col-md-4">
-   <p>All rights Reserved </p>
-  </div>
-    <div class="col-md-4">
-       <p>Design by : Basit Majeed</p> 
   </div>
 </div>
 </footer>
